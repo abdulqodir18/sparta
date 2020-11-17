@@ -1,0 +1,40 @@
+.a-hero__inner {
+    display: flex;
+    margin-bottom: 65px;
+}
+.a-hero__list {
+    padding: 0;
+    margin: 0;
+    list-style:none;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 33px;
+    width: 205px;
+    max-width: 100%;
+    background-image: url("../img/day.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px 10px;
+}
+.a-hero__item {
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.9px;
+    color: #1b1916;
+    letter-spacing: 0.9px;
+    text-transform: uppercase;
+}
+.a-hero__trafic {
+    margin: 0;
+    max-width: 76px;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: italic;
+    color: #ffffff;
+}
+@media only screen and (max-width:1000px) {
+    .a-hero__inner {
+        margin-bottom: 49px;
+    }
+}
