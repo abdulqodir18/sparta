@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
 ========================================================================== */
@@ -442,6 +443,13 @@ img {
   margin-right: auto;
 }
 
+@media only screen and (max-width: 400px) {
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
 .button {
   text-decoration: none;
 }
@@ -451,6 +459,25 @@ img {
   background-position: top -130px center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+@media only screen and (max-width: 1000px) {
+  .a-heding {
+    background-position: top -130px left -400px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .a-heding {
+    background-position: top -130px left -500px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .a-heding {
+    background-image: url("../../img/350hero-bg.png");
+    background-position: top -130px left -550px;
+  }
 }
 
 .a-site-header {
@@ -465,6 +492,8 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .a-site-header__logo {
@@ -478,31 +507,33 @@ img {
 }
 
 .a-site-header__text {
+  width: 250px;
+  max-width: 100%;
   margin: 0;
   font-size: 18px;
   font-weight: 400;
-  line-height: normal;
+  line-height: 18px;
   font-style: normal;
   letter-spacing: 12.6px;
   color: #ffffff;
-  text-decoration: none;
   position: relative;
   margin-right: auto;
+  text-align: center;
 }
 
 .a-site-header__text::before {
+  content: "";
   background-image: url("../../img/top-text-bg.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
-  content: "";
   width: 351px;
   height: 14px;
   display: block;
   position: absolute;
   top: 40%;
-  left: -50%;
-  z-index: -1;
+  left: -25%;
+  z-index: 1;
 }
 
 .a-site-header__tel {
@@ -514,6 +545,66 @@ img {
   letter-spacing: normal;
   line-height: normal;
   text-align: right;
+}
+
+@media only screen and (max-width: 1000px) {
+  .a-site-header__logo-img {
+    width: 160px;
+    height: 58px;
+  }
+  .a-site-header__tel {
+    font-size: 18px;
+    line-height: 18px;
+  }
+}
+
+@media only screen and (max-width: 611px) {
+  .a-site-header__text {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin-top: 54px;
+    text-align: left;
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .a-site-header__logo-img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: left center;
+       object-position: left center;
+    width: 58px;
+  }
+}
+
+.a-site-main {
+  margin-top: -100px;
+}
+
+.a-odds__title {
+  margin: 0;
+  margin-bottom: 133px;
+  text-align: center;
+  font-size: 68px;
+  font-weight: 68px;
+  color: #ff0000;
+  letter-spacing: 3.4px;
+  position: relative;
+}
+
+.a-odds__title::before {
+  content: "Что вас ждёт";
+  color: rgba(50, 56, 63, 0.1);
+  font-family: Besom;
+  font-size: 180px;
+  font-weight: 1;
+  text-transform: uppercase;
+  letter-spacing: 9px;
+  position: absolute;
+  top: -50%;
+  left: 180px;
 }
 
 .a-hero {
@@ -539,7 +630,7 @@ img {
   margin-bottom: 44px;
   color: #ffffff;
   font-size: 68px;
-  font-weight: 700;
+  font-weight: 900;
   text-transform: uppercase;
   font-style: normal;
   letter-spacing: 3.4px;
@@ -586,7 +677,19 @@ img {
   .a-hero__text {
     margin-bottom: 33px;
     font-size: 40px;
-    font-weight: 400;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .a-hero__tite {
+    font-size: 95px;
+    line-height: 1;
+    letter-spacing: 8;
+  }
+  .a-hero__text {
+    font-size: 35px;
+    line-height: 30px;
+    letter-spacing: 3.32px;
   }
 }
 
@@ -624,6 +727,11 @@ img {
   color: #1b1916;
   letter-spacing: 0.9px;
   text-transform: uppercase;
+  margin-right: 62px;
+}
+
+.a-hero__item:last-child {
+  margin-right: 0;
 }
 
 .a-hero__trafic {
@@ -638,6 +746,12 @@ img {
 @media only screen and (max-width: 1000px) {
   .a-hero__inner {
     margin-bottom: 49px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .a-hero__list {
+    margin-right: 20px;
   }
 }
 /*# sourceMappingURL=styles.css.map */

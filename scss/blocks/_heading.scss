@@ -1,6 +1,22 @@
 .a-heding {
     background-image: url("../img/top-bg.png");
-    background-position: top -130px center;
+    background-position: top -130px center ;
     background-repeat: no-repeat;
     background-size: cover;
+}
+@media only screen and (max-width:1000px) {
+    .a-heding {
+        background-position: top -130px left -400px ;
+    }
+}
+@media only screen and (max-width:700px) {
+    .a-heding {
+        background-position: top -130px left -500px;
+    }
+}
+@media only screen and (max-width:600px) {
+    .a-heding {
+        background-image: url("../../img/350hero-bg.png");
+        background-position: top -130px left -550px;
+    }
 }

@@ -24,6 +24,10 @@
     color: #1b1916;
     letter-spacing: 0.9px;
     text-transform: uppercase;
+    margin-right: 62px;
+    &:last-child{
+        margin-right: 0;
+    }
 }
 .a-hero__trafic {
     margin: 0;
@@ -36,5 +40,10 @@
 @media only screen and (max-width:1000px) {
     .a-hero__inner {
         margin-bottom: 49px;
+    }
+}
+@media only screen and (max-width:400px) {
+    .a-hero__list {
+        margin-right: 20px;
     }
 }
