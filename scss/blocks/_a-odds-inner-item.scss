@@ -1,0 +1,144 @@
+.a-odds-item {
+    max-width: 690px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    &:nth-child(even) {
+        margin-left: 400px;
+    }
+    &:nth-child(odd) {
+        margin-right: 400px;
+    }
+    
+    &::before {
+        display: block;
+        content: "";
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin-right: 23px;
+    }
+}
+
+.a-odds-item__inner {
+    max-width: 300px;
+}
+.a-odds-item__title {
+    margin: 0;
+    margin-bottom: 22px;
+    color: #4d4d4d;
+    font-size: 20px;
+    font-weight: 400px;
+    line-height: 24px;
+    letter-spacing: 1px;
+}
+.a-odds-item__text {
+    margin: 0;
+    color: #4d4d4d;
+    font-size: 16px;
+    line-height: 24px;
+    width: 300px;
+    max-width: 100%;
+}
+.a-odds-item--special {
+    &::before {
+        background-image: url("../img/special.png");
+        width: 368px;
+        height: 298px;
+    }
+}
+.a-odds-item--skills {
+    &::before {
+        width: 374px;
+        height: 324px;
+        background-image: url("../img/skills.png");
+    }
+}
+.a-odds-item--extreme {
+    &::before {
+        width: 374px;
+        height: 328px;
+        background-image: url("../img/extrim.png");
+    }
+}
+.a-odds-item--stress {
+    &::before {
+        width: 393px;
+        height: 321px;
+        background-image: url("../img/stress.png");
+    }
+}
+@media only screen and (max-width: 1100px) {
+    .a-odds-item {
+        max-width:  100%;
+        &:nth-child(even) {
+            margin-left: 0;
+        }
+        &:nth-child(odd) {
+            margin-right: 80px;
+        }
+        &::before {
+            margin-right: 0;
+        }
+    }
+    .a-odds-item--special {
+        &::before {
+            width: 290px;
+            height: 237px;
+        }
+    }
+    .a-odds-item--skills {
+        transform: translate(70px, 50px);
+        &::before {
+            width: 291px;
+            height: 243px;
+            
+        }
+    }
+    .a-odds-item--extreme {
+        &::before {
+            width: 320px;
+            height: 333px;
+        }
+    }
+    .a-odds-item--stress {
+        flex-direction: column;
+        transform: translate(180px, -25px);
+        &::before {
+            width: 320px;
+            height: 280px;
+        }
+    }
+    
+} 
+@media only screen and (max-width:750px) {
+    .a-odds-item {
+        max-width: 690px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+        
+        &:nth-child(even) {
+            margin-left: 0;
+        }
+        &:nth-child(odd) {
+            margin-right: 0;
+        }
+        
+    } 
+    .a-odds-item--skills {
+        transform: translate(0, 0);
+    }   
+    .a-odds-item--stress {
+        transform: translate(0, 0);
+    }   
+    .a-odds-item__title {
+        text-align: center;
+        margin-top: 20px;
+    }
+    .a-odds-item__text {
+        text-align: center;
+    }
+}

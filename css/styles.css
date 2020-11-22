@@ -583,28 +583,557 @@ img {
   margin-top: -100px;
 }
 
+.a-odds {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
 .a-odds__title {
+  overflow: hidden;
   margin: 0;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 133px;
   text-align: center;
   font-size: 68px;
-  font-weight: 68px;
+  font-weight: 900;
+  line-height: 1;
   color: #ff0000;
   letter-spacing: 3.4px;
+  width: 100%;
+  padding: 40px 0;
   position: relative;
 }
 
 .a-odds__title::before {
   content: "Что вас ждёт";
+  width: 100%;
   color: rgba(50, 56, 63, 0.1);
   font-family: Besom;
   font-size: 180px;
   font-weight: 1;
   text-transform: uppercase;
-  letter-spacing: 9px;
+  letter-spacing: 5px;
   position: absolute;
-  top: -50%;
-  left: 180px;
+  top: 40%;
+  left: 50%;
+  z-index: -1;
+  -webkit-transform: translate(-50%, -40%);
+          transform: translate(-50%, -40%);
+  white-space: nowrap;
+}
+
+.a-odds__wrapper {
+  position: relative;
+  background-image: url("../../img/figure.png");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 687px 1257px;
+}
+
+.a-odds__text {
+  margin: 0;
+  color: #ff0000;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+}
+
+.a-odds__text--start {
+  z-index: 2;
+  top: 57px;
+  right: 175px;
+}
+
+.a-odds__text--start::after {
+  content: "";
+  display: block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  background-color: rgba(255, 0, 0, 0.397);
+  margin-top: 22px;
+  background-image: url("../../img/red-bg.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 12px 12px;
+}
+
+.a-odds__text--finish {
+  z-index: 2;
+  bottom: 130px;
+  left: 287px;
+}
+
+.a-odds__text--finish::before {
+  content: "";
+  display: block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  background-color: rgba(255, 0, 0, 0.397);
+  margin-bottom: 22px;
+  background-image: url("../../img/red-bg.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 12px 12px;
+}
+
+@media only screen and (max-width: 1100px) {
+  .a-odds__wrapper {
+    background-image: url("../img/figura730.png");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 494px 1080px;
+  }
+  .a-odds__title {
+    font-size: 7vw;
+    line-height: 1;
+  }
+  .a-odds__title::before {
+    font-size: 15vw;
+    line-height: 1;
+    -webkit-transform: translate(-50%, -40%);
+            transform: translate(-50%, -40%);
+  }
+  .a-odds__text--start {
+    position: absolute;
+    z-index: 2;
+    top: 36px;
+    right: 78px;
+  }
+  .a-odds__text--finish {
+    position: absolute;
+    z-index: 2;
+    bottom: 128px;
+    left: 190px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .a-odds__title {
+    position: relative;
+    font-size: 36px;
+  }
+  .a-odds__title::before {
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    text-align: center;
+    font-size: 100px;
+    width: 350px;
+    height: 103px;
+  }
+  .a-odds__wrapper {
+    width: 100%;
+    padding-left: 25px;
+    padding-right: 25px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-image: url("../../img/figure.png");
+    background-position: top  center;
+    background-repeat: no-repeat;
+    background-size: 0px 0px;
+  }
+  .a-odds__text {
+    position: static;
+  }
+}
+
+.a-odds__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  padding-top: 28px;
+}
+
+.a-odds__item {
+  margin-bottom: 35px;
+}
+
+@media only screen and (max-width: 1100px) {
+  .a-odds__item {
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .a-odds__item {
+    margin-bottom: 53px;
+  }
+  .a-odds__item:first-child {
+    margin-top: 37px;
+  }
+}
+
+.a-odds-item {
+  max-width: 690px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.a-odds-item:nth-child(even) {
+  margin-left: 400px;
+}
+
+.a-odds-item:nth-child(odd) {
+  margin-right: 400px;
+}
+
+.a-odds-item::before {
+  display: block;
+  content: "";
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 23px;
+}
+
+.a-odds-item__inner {
+  max-width: 300px;
+}
+
+.a-odds-item__title {
+  margin: 0;
+  margin-bottom: 22px;
+  color: #4d4d4d;
+  font-size: 20px;
+  font-weight: 400px;
+  line-height: 24px;
+  letter-spacing: 1px;
+}
+
+.a-odds-item__text {
+  margin: 0;
+  color: #4d4d4d;
+  font-size: 16px;
+  line-height: 24px;
+  width: 300px;
+  max-width: 100%;
+}
+
+.a-odds-item--special::before {
+  background-image: url("../img/special.png");
+  width: 368px;
+  height: 298px;
+}
+
+.a-odds-item--skills::before {
+  width: 374px;
+  height: 324px;
+  background-image: url("../img/skills.png");
+}
+
+.a-odds-item--extreme::before {
+  width: 374px;
+  height: 328px;
+  background-image: url("../img/extrim.png");
+}
+
+.a-odds-item--stress::before {
+  width: 393px;
+  height: 321px;
+  background-image: url("../img/stress.png");
+}
+
+@media only screen and (max-width: 1100px) {
+  .a-odds-item {
+    max-width: 100%;
+  }
+  .a-odds-item:nth-child(even) {
+    margin-left: 0;
+  }
+  .a-odds-item:nth-child(odd) {
+    margin-right: 80px;
+  }
+  .a-odds-item::before {
+    margin-right: 0;
+  }
+  .a-odds-item--special::before {
+    width: 290px;
+    height: 237px;
+  }
+  .a-odds-item--skills {
+    -webkit-transform: translate(70px, 50px);
+            transform: translate(70px, 50px);
+  }
+  .a-odds-item--skills::before {
+    width: 291px;
+    height: 243px;
+  }
+  .a-odds-item--extreme::before {
+    width: 320px;
+    height: 333px;
+  }
+  .a-odds-item--stress {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-transform: translate(180px, -25px);
+            transform: translate(180px, -25px);
+  }
+  .a-odds-item--stress::before {
+    width: 320px;
+    height: 280px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .a-odds-item {
+    max-width: 690px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .a-odds-item:nth-child(even) {
+    margin-left: 0;
+  }
+  .a-odds-item:nth-child(odd) {
+    margin-right: 0;
+  }
+  .a-odds-item--skills {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  .a-odds-item--stress {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  .a-odds-item__title {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .a-odds-item__text {
+    text-align: center;
+  }
+}
+
+.a-special {
+  background-image: url("../../img/special-bg.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 1920px 929px;
+  padding-top: 196px;
+  padding-bottom: 206px;
+}
+
+.a-remember {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.a-remember::before {
+  content: "";
+  -webkit-transform: translateY(-25%);
+          transform: translateY(-25%);
+  width: 130px;
+  height: 143px;
+  margin-right: 42px;
+  background-image: url("../../img/rem.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.a-remember__title {
+  margin: 0;
+  position: relative;
+  max-width: 173px;
+  color: #fefefe;
+  font-size: 36px;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 1.8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.a-remember__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+}
+
+.a-remember__item {
+  margin-right: 93px;
+}
+
+.a-remember__item:last-child {
+  margin-right: 0;
+}
+
+.a-remember-item {
+  max-width: 344px;
+}
+
+.a-remember-item--second {
+  max-width: 222px;
+}
+
+.a-remember-item__title {
+  margin: 0;
+  margin-bottom: 24px;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.a-remember-item__text {
+  color: #ffffff;
+}
+
+.a-special__cours {
+  margin-bottom: 107px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url("../../img/cours-border.png"), url("../../img/cours-bg.png");
+  background-position: center center, left 10px center;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 1143px 342px, 422px 339px;
+}
+
+.a-cours {
+  padding-top: 64px;
+  padding-right: 57px;
+  padding-bottom: 77px;
+  padding-left: 76px;
+}
+
+.a-cours__title {
+  margin: 0;
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 1.5;
+  text-transform: uppercase;
+  color: #ffffff;
+  letter-spacing: 1.8px;
+  max-width: 280px;
+}
+
+.a-cours__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+}
+
+.a-cours__item {
+  margin-right: 91px;
+}
+
+.a-cours__item:last-child {
+  margin-right: 0;
+}
+
+.a-cours-item {
+  max-width: 230px;
+}
+
+.a-cours-item__title {
+  margin: 0;
+  margin-bottom: 24px;
+  font-size: 20px;
+  color: #ffffff;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.a-cours-item__title::before {
+  content: "01";
+  display: block;
+  width: 57px;
+  height: 48px;
+  font-family: Besom;
+  font-size: 72px;
+  line-height: 84px;
+  letter-spacing: 3.6px;
+  margin-bottom: 25px;
+  color: rgba(255, 255, 255, 0.15);
+}
+
+.a-cors-item__text {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
 }
 
 .a-hero {

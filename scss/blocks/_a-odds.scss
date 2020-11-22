@@ -2,48 +2,164 @@
     margin-top: -100px;
 }
 .a-odds {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    
 }
 .a-odds__title {
+    overflow: hidden;
     margin: 0;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 133px;
     text-align: center;
     font-size: 68px;
-    font-weight: 68px;
+    font-weight: 900;
+    line-height: 1;
     color: #ff0000;
     letter-spacing: 3.4px;
+    width: 100%;
+    padding: 40px 0;
     position: relative;
     
     &::before {
         content: "Что вас ждёт";
+        width: 100%;
         color: rgba(50, 56, 63, 0.1);
         font-family: Besom;
         font-size: 180px;
         font-weight: 1;
         text-transform: uppercase;
-        letter-spacing: 9px;
+        letter-spacing: 5px;
         position: absolute;
-        top: -50%;
-        left: 180px;
-
+        top: 40%;
+        left: 50%;
+        z-index: -1;
+        transform: translate(-50%, -40%);
+        white-space: nowrap;
     }
 }
-.a-odds__list {
+.a-odds__wrapper{
+    position: relative;
+    background-image: url("../../img/figure.png");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 687px 1257px;
 }
-.a-odds__item {
+.a-odds__text {
+    margin: 0;
+    color: #ff0000;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    
 }
-.a-odds-item {
+.a-odds__text--start {
+    z-index: 2;
+    top: 57px;
+    right: 175px;
+    
+    &::after {
+        content: "";
+        display: block;
+        border-radius: 50%;
+        width: 24px;
+        height: 24px;
+        background-color: rgba(255, 0, 0, 0.397);
+        margin-top: 22px;
+        background-image: url("../../img/red-bg.png");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 12px 12px;
+        
+    }
+    
 }
-.a-odds-item--special {
+.a-odds__text--finish {
+    z-index: 2;
+    bottom: 130px;
+    left: 287px;
+    
+    &::before {
+        content: "";
+        display: block;
+        border-radius: 50%;
+        width: 24px;
+        height: 24px;
+        background-color: rgba(255, 0, 0, 0.397);
+        margin-bottom: 22px;
+        background-image: url("../../img/red-bg.png");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 12px 12px;
+        
+    }
 }
-.a-odds-item__inner {
+
+@media only screen and (max-width:1100px) {
+    .a-odds__wrapper{
+        background-image: url("../img/figura730.png");
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: 494px 1080px;
+    }
+    .a-odds__title {
+        font-size: 7vw;
+        line-height: 1;
+        
+        &::before {
+            font-size: 15vw;
+            line-height: 1;
+            transform: translate(-50%, -40%);
+        }
+    }
+    .a-odds__text--start {
+        position: absolute;
+        z-index: 2;
+        top: 36px;
+        right: 78px;
+    }
+    .a-odds__text--finish {
+        position: absolute;
+        z-index: 2;
+        bottom: 128px;
+        left: 190px;
+    }
 }
-.a-odds-item__title {
-}
-.a-odds-item__text {
-}
-.a-odds-item--skills {
-}
-.a-odds-item--extreme {
-}
-.a-odds-item--stress {
+@media only screen and (max-width:750px) {
+    .a-odds__title {
+        position: relative;
+        font-size: 36px;
+        &::before {
+            position: absolute;
+            top: 50%;
+            left: 35%;
+            text-align: center;
+            font-size: 100px;
+            width: 350px;
+            height: 103px;
+            
+        }
+    }
+    .a-odds__wrapper{
+        width: 100%;
+        padding-left: 25px;
+        padding-right: 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-image: url("../../img/figure.png");
+        background-position: top  center;
+        background-repeat: no-repeat;
+        background-size: 0px 0px;
+    }
+    .a-odds__text {
+        position: static;
+    }
 }

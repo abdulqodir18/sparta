@@ -1,0 +1,32 @@
+.a-cours-item {
+  max-width: 230px;
+}
+
+.a-cours-item__title {
+  margin: 0;
+  margin-bottom: 24px;
+  font-size: 20px;
+  color: #ffffff;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
+  &::before {
+    content: "01";
+    display: block;
+    width: 57px;
+    height: 48px;
+    font-family: Besom;
+    font-size: 72px;
+    line-height: 84px;
+    letter-spacing: 3.6px;
+    margin-bottom: 25px; 
+    color: rgba(255, 255, 255, 0.15);
+  }
+}
+.a-cors-item__text {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
