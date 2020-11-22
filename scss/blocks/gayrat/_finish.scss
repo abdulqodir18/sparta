@@ -1,0 +1,143 @@
+.finish {
+        background-image: url("../../img/g-formbg.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        position: relative;
+        z-index: 1;
+        margin-top: -3%;
+        max-width: 100%;
+}
+
+@media
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (   min--moz-device-pixel-ratio: 2),
+    only screen and (     -o-min-device-pixel-ratio: 2/1),
+    only screen and (        min-device-pixel-ratio: 2),
+    only screen and (                min-resolution: 192dpi),
+    only screen and (                min-resolution: 2dppx) { 
+
+        .finish {
+                background-image: url("../../img/g-formbg@2x.png");
+        }
+}
+
+@media only screen and (max-width: 1730px) {
+        .finish {
+                margin-top: -5%;
+        }
+}
+
+@media only screen and (max-width: 1590px) {
+        .finish {
+                margin-top: -7%;
+        }
+}
+
+@media only screen and (max-width: 1450px) {
+        .finish {
+                margin-top: -9%;
+        }
+}
+
+@media only screen and (max-width: 1370px) {
+        .finish {
+                margin-top: -11%;
+        }
+}
+
+@media only screen and (max-width: 1300px) {
+        .finish {
+                margin-top: -12%;
+        }
+}
+
+@media only screen and (max-width: 1200px) {
+        .finish {
+                margin-top: -14%;
+        }
+}
+
+@media only screen and (max-width: 1150px) {
+        .finish {
+                margin-top: -16%;
+        }
+}
+
+@media only screen and (max-width: 1100px) {
+        .finish {
+                margin-top: -17%;
+        }
+}
+
+@media only screen and (max-width: 1050px) {
+        .finish {
+                margin-top: -19%;
+        }
+}
+
+@media only screen and (max-width: 1000px) {
+        .finish {
+                margin-top: -21%;
+        }
+}
+
+@media only screen and (max-width: 950px) {
+        .finish {
+                margin-top: -22%;
+        }
+}
+
+@media only screen and (max-width: 900px) {
+        .finish {
+                margin-top: -24%;
+        }
+}
+
+@media only screen and (max-width: 850px) {
+        .finish {
+                margin-top: -26%;
+        }
+}
+
+@media only screen and (max-width: 750px) {
+        .finish {
+                margin-top: -32%;
+        }
+}
+
+@media only screen and (max-width: 700px) {
+        .finish {
+                margin-top: -36%;
+        }
+}
+
+@media only screen and (max-width: 640px) {
+        .finish {
+                margin-top: -42%;
+        }
+}
+
+@media only screen and (max-width: 580px) {
+        .finish {
+                margin-top: -33%;
+        }
+}
+
+@media only screen and (max-width: 540px) {
+        .finish {
+                margin-top: -35%;
+        }
+}
+
+@media only screen and (max-width: 370px) {
+        .finish {
+                margin-top: -51%;
+        }
+}
+
+@media only screen and (max-width: 320px) {
+        .finish {
+                margin-top: -60%;
+        }
+}

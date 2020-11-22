@@ -1,0 +1,119 @@
+.location {
+    padding-top: 48px;
+
+    &::after {
+        content: "";
+        max-width: 100%;
+        height: 700px;
+        display: block;
+        background-image: url("../../img/g-location.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+        position: relative;
+        z-index: 555;
+    }
+
+    &__heading {
+        margin-top: 0;
+        margin-bottom: 57px;
+        color: #ff0000;
+        font-size: 68px;
+        font-weight: 700;
+        line-height: normal;
+        text-align: center;
+        text-transform: uppercase;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        padding-right: 20px;
+        overflow: hidden;
+        font-family: "Core Sans";
+    }
+
+    &__heading::before {
+        content: "мы здесь были";
+        opacity: 0.1;
+        color: #32383f;
+        font-family: "Besom";
+        font-size: 180px;
+        font-weight: 400;
+        font-style: normal;
+        line-height: 20px;
+        text-align: center;
+        text-transform: uppercase;
+        position: absolute;
+        z-index: -1;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+    }
+}
+
+@media
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (   min--moz-device-pixel-ratio: 2),
+    only screen and (     -o-min-device-pixel-ratio: 2/1),
+    only screen and (        min-device-pixel-ratio: 2),
+    only screen and (                min-resolution: 192dpi),
+    only screen and (                min-resolution: 2dppx) { 
+
+        .location::after {
+            background-image: url("../../img/g-location@2x.png");
+        }
+}
+
+@media only screen and (max-width: 1150px) {
+    .location__heading {
+        margin-bottom: 0;
+    }
+}
+
+@media only screen and (max-width: 1085px) {
+    .location__heading {
+        margin-bottom: 0;
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+    .location__heading {
+        font-size: 64px;
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+    .location__heading {
+        font-size: 54px;
+    }
+}
+
+@media only screen and (max-width: 860px) {
+    .location__heading {
+        margin-top: 50px;
+        margin-bottom: -70px;
+        font-size: 44px;
+    }
+
+    .location::after {
+        background-size: auto 400px;
+    }
+}   
+
+@media only screen and (max-width: 860px) {
+    .location__heading::before {
+        font-size: 105px;
+    }
+
+    .location__heading {
+        margin-top: 0;
+        margin-bottom: -150px;
+    }
+}  
+
+@media only screen and (max-width: 640px) {
+    .location__heading::before {
+        display: none;
+    }
+} 
