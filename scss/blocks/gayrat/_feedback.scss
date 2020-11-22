@@ -1,0 +1,128 @@
+.feedback {
+    padding-top: 143px;
+    padding-bottom: 140px;
+    background-image: url("../../img/g-sectionbg.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    margin-top: -240px;
+
+    &__title {
+        position: relative;
+        z-index: 1;
+        margin-top: 0;
+        margin-bottom: 0;
+        color: #ff0000;
+        font-size: 68px;
+        font-weight: 700;
+        line-height: normal;
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 110px;
+        margin-top: 240px;
+        font-family: "Core Sans";
+    }
+
+    &__title::before {
+        content: "Отзывы";
+        width: 519px;
+        height: 124px;
+        position: absolute;
+        z-index: 1;
+        top: 130%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #32383f;
+        font-weight: 400;
+        font-family: "Besom";
+        font-size: 180px;
+        line-height: 20px;
+        text-transform: uppercase;
+        opacity: 0.1;
+    }
+
+    &__youtube {
+        background-repeat: no-repeat;
+        position: relative;
+        z-index: 1;
+        margin-bottom: 58px;
+        display: inline-block;
+        vertical-align: baseline;
+    }
+
+    &__youtube::before {
+        content: "";
+        width: 97px;
+        height: 106px;
+        background-image: url("../../img/g-youtube-link.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center center;
+        position: absolute;
+        z-index: 1;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (   min--moz-device-pixel-ratio: 2),
+    only screen and (     -o-min-device-pixel-ratio: 2/1),
+    only screen and (        min-device-pixel-ratio: 2),
+    only screen and (                min-resolution: 192dpi),
+    only screen and (                min-resolution: 2dppx) { 
+
+        .exam {
+            background-image: url("../../img/g-youtube-link@2x.png");
+        }
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .feedback__title {
+        margin-top: 150px;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .feedback__title {
+        font-size: 48px;
+
+        &::before {
+            font-size: 120px;
+            top: 150%;
+        }
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .feedback {
+        padding-bottom: 60px;
+    }
+}
+
+
+@media only screen and (max-width: 540px) {
+    .feedback__title {
+        margin-top: 100px;
+
+        &::before {
+            display: none;
+        }
+    }
+
+    .feedback__youtube {
+        margin-bottom: 25px;
+    }
+
+    .feedback {
+        padding-bottom: 30px;
+    }
+}
+
+@media only screen and (max-width: 370px) {
+    .feedback__title::before {
+        font-size: 100px;
+    }
+}
