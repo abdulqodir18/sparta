@@ -969,87 +969,21 @@ img {
   background-image: url("../../img/special-bg.png");
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: 1920px 929px;
+  background-size: 1920px 985px;
   padding-top: 196px;
   padding-bottom: 206px;
 }
 
-.a-remember {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-}
-
-.a-remember::before {
-  content: "";
-  -webkit-transform: translateY(-25%);
-          transform: translateY(-25%);
-  width: 130px;
-  height: 143px;
-  margin-right: 42px;
-  background-image: url("../../img/rem.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.a-remember__title {
-  margin: 0;
-  position: relative;
-  max-width: 173px;
-  color: #fefefe;
-  font-size: 36px;
-  line-height: 1;
-  text-transform: uppercase;
-  letter-spacing: 1.8px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.a-remember__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: auto;
-}
-
-.a-remember__item {
-  margin-right: 93px;
-}
-
-.a-remember__item:last-child {
-  margin-right: 0;
-}
-
-.a-remember-item {
-  max-width: 344px;
-}
-
-.a-remember-item--second {
-  max-width: 222px;
-}
-
-.a-remember-item__title {
-  margin: 0;
-  margin-bottom: 24px;
-  font-size: 20px;
-  line-height: 24px;
-  text-transform: uppercase;
-  color: #ffffff;
-}
-
-.a-remember-item__text {
-  color: #ffffff;
+@media only screen and (max-width: 750px) {
+  .a-special {
+    margin-top: 25px;
+    background-image: url("../../img/special-bg.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 1920px 1388px;
+    padding-top: 180px;
+    padding-bottom: 155px;
+  }
 }
 
 .a-special__cours {
@@ -1060,8 +994,11 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-image: url("../../img/cours-border.png"), url("../../img/cours-bg.png");
-  background-position: center center, left 10px center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: url("../img/cours-border.png"), url("../img/cours-bg.png");
+  background-position: center center, left 5px  center;
   background-repeat: no-repeat, no-repeat;
   background-size: 1143px 342px, 422px 339px;
 }
@@ -1102,6 +1039,94 @@ img {
   margin-right: 0;
 }
 
+@media only screen and (max-width: 1200px) {
+  .a-special__cours {
+    background-image: url("../img/750cours.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 1000px 367px;
+  }
+  .a-cours__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  .a-special__cours {
+    background-image: url("../img/750cours.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 750px 367px;
+  }
+  .a-cours__title {
+    max-width: 212px;
+    line-height: 36px;
+  }
+  .a-cours__list {
+    margin-left: 63px;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .a-cours {
+    padding-top: 62px;
+    padding-right: 34px;
+    padding-bottom: 49px;
+    padding-left: 35px;
+  }
+  .a-special__cours {
+    background-size: 700px 367px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .a-special__cours {
+    background-image: url("../img/cours-350.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 500px 693px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .a-cours {
+    padding-top: 154px;
+    padding-right: 0px;
+    padding-bottom: 100px;
+    padding-left: 0px;
+  }
+  .a-cours__title {
+    margin-bottom: 121px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .a-special__cours {
+    background-size: 292px 693px;
+  }
+  .a-cours {
+    padding-top: 72px;
+    padding-right: 0px;
+    padding-bottom: 54px;
+    padding-left: 0px;
+  }
+  .a-cours__list {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .a-cours__item {
+    margin-right: 0;
+    margin-bottom: 34px;
+  }
+  .a-cours__item:last-child {
+    margin-bottom: 0;
+  }
+}
+
 .a-cours-item {
   max-width: 230px;
 }
@@ -1134,6 +1159,180 @@ img {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .a-cours-item {
+    max-width: 375px;
+  }
+  .a-cours-item__title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    margin-bottom: 22px;
+  }
+  .a-cours-item__title::before {
+    margin-bottom: 0;
+    margin-right: 20px;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .a-cours-item__title::before {
+    width: 37px;
+    height: 31px;
+    font-size: 46px;
+    line-height: 0.9;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .a-cours-item {
+    max-width: 248px;
+  }
+  .a-cours-item__title {
+    line-height: 20px;
+    font-weight: 400;
+  }
+}
+
+.a-remember {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-bottom: 148px;
+}
+
+.a-remember::before {
+  content: "";
+  -webkit-transform: translateY(-25%);
+          transform: translateY(-25%);
+  width: 130px;
+  height: 143px;
+  margin-right: 42px;
+  background-image: url("../../img/rem.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.a-remember__title {
+  margin: 0;
+  position: relative;
+  max-width: 173px;
+  color: #fefefe;
+  font-size: 36px;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 1.8px;
+}
+
+.a-remember__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+}
+
+.a-remember__item {
+  margin-right: 93px;
+}
+
+.a-remember__item:last-child {
+  margin-right: 0;
+}
+
+.a-remember-item {
+  max-width: 344px;
+}
+
+.a-remember-item--second {
+  max-width: 222px;
+}
+
+.a-remember-item__title {
+  margin: 0;
+  margin-bottom: 24px;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.a-remember-item__text {
+  margin: 0;
+  color: #ffffff;
+}
+
+@media only screen and (max-width: 950px) {
+  .a-remember__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .a-remember__item {
+    margin-right: 0px;
+    margin-bottom: 44px;
+  }
+  .a-remember__item:last-child {
+    margin-bottom: 0;
+  }
+  .a-remember-item {
+    max-width: 285px;
+  }
+  .a-remember-item--second {
+    max-width: 285px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .a-remember {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+  }
+  .a-remember::before {
+    display: none;
+  }
+  .a-remember__title {
+    max-width: 450px;
+    margin-bottom: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .a-remember__title::after {
+    content: "";
+    width: 106px;
+    height: 116px;
+    margin-right: 42px;
+    background-image: url("../../img/rem.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .a-remember__list {
+    margin-left: 0;
+  }
 }
 
 .a-hero {

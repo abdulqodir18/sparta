@@ -2,11 +2,13 @@
   margin-bottom: 107px;
   display: flex;
   align-items: center;
-  background-image: url("../../img/cours-border.png"), url("../../img/cours-bg.png");
-  background-position: center center, left 10px center;
+  justify-content: center;
+  background-image: url("../img/cours-border.png"), url("../img/cours-bg.png");
+  background-position: center center, left 5px  center;
   background-repeat: no-repeat, no-repeat;
   // background-size: contain, ;
   background-size: 1143px 342px, 422px 339px;
+  
 }
 .a-cours {
   padding-top: 64px;
@@ -38,3 +40,82 @@
     margin-right: 0;
   }
 }
+@media only screen and (max-width: 1200px) {
+  .a-special__cours {
+    background-image: url("../img/750cours.png");
+    background-position: center center;
+    background-repeat:no-repeat;
+    background-size: 1000px 367px;
+  }
+  .a-cours__list {
+    flex-direction: column;
+  }
+} 
+@media only screen and (max-width: 1050px) {
+  .a-special__cours {
+    background-image: url("../img/750cours.png");
+    background-position: center center;
+    background-repeat:no-repeat;
+    background-size: 750px 367px;
+  }
+  .a-cours__title {
+    max-width: 212px;
+    line-height: 36px;
+  }
+  .a-cours__list {
+    margin-left: 63px;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .a-cours {
+    padding-top: 62px;
+    padding-right: 34px;
+    padding-bottom: 49px;
+    padding-left: 35px;
+  }
+  .a-special__cours {
+    background-size: 700px 367px;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .a-special__cours {
+    background-image: url("../img/cours-350.png");
+    background-position: center center;
+    background-repeat:no-repeat;
+    background-size: 500px 693px;
+    flex-direction: column;
+  }
+  .a-cours {
+    padding-top: 154px;
+    padding-right: 0px;
+    padding-bottom: 100px;
+    padding-left: 0px;
+  }
+  .a-cours__title {
+    margin-bottom: 121px;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .a-special__cours {
+    background-size: 292px 693px;
+  }
+  .a-cours {
+    padding-top: 72px;
+    padding-right: 0px;
+    padding-bottom: 54px;
+    padding-left: 0px;
+  }
+  .a-cours__list {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .a-cours__item {
+    margin-right: 0;
+    margin-bottom: 34px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }  
+}
+
